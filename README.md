@@ -2,13 +2,18 @@
 
 Esempio d'uso del port di FreeRTOS per windows
 
-## TL;DR
+## Info
 
 Creare un progetto C/C++ per mingw
 
 Aggiungere gli include
 
 Aggiungere le librerie winmm e ws2_32
+
+Personalizzare la cartella `cod`
+
+Aggiungere in `FreeRTOS/port` il porting per la scheda e in `bsp` la
+relativa bsp
 
 ## Cartelle
 
@@ -23,3 +28,13 @@ La sottocartella `win` contiene l'implementazione per windows
 Impostazioni
 
 ### cmsis.rtos
+
+Interfaccia omonima
+
+### FreeRTOS
+
+Versione: FreeRTOSv202107.00
+
+### cod
+
+Codice
